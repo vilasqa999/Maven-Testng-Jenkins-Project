@@ -3,6 +3,7 @@ package mavenforjenkins;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,10 +16,13 @@ public class UITest
 	{
 		//WebDriverManager.chromedriver().setup();
 		
-		WebDriverManager.edgedriver().setup();
+		//WebDriverManager.edgedriver().setup();
 		//WebDriver driver=new ChromeDriver();
 		
-		WebDriver driver=new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		
+		WebDriver driver=new FirefoxDriver();
+		//WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		
 		driver.get("https://visualstories.com/info/whitelabel");
