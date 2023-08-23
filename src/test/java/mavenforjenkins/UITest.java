@@ -32,7 +32,7 @@ public class UITest
 		Assert.assertEquals(actual,expect);
 		
 		System.out.println("Script executed successfully........");
-		
+		System.out.println("Script executed successfully and changes updated........");
 		Thread.sleep(5000);
 		driver.quit();
 		
